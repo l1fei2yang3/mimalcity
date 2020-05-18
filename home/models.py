@@ -36,19 +36,29 @@ class MiddleNavHeader(BaseModel):
     def __str__(self):
         return self.title
 
-class MiddleNavHeaderData(BaseModel):
+class MiddleNavHeaderMobile(BaseModel):
     images=models.ImageField(upload_to="nav-img",verbose_name="中部导航栏图片",null=True,blank=True)
     title=models.CharField(max_length=20,verbose_name="中部导航栏标题")
     price=models.IntegerField(verbose_name="中部导航栏价格")
-    midhear=models.ForeignKey("MiddleNavHeader",on_delete=models.CASCADE,verbose_name="外键关联中部标题",related_name="mid_data")
+    midheader=models.ForeignKey("MiddleNavHeader",on_delete=models.CASCADE,verbose_name="外键关联中部标题",related_name="mid_header")
     images_url=models.CharField(max_length=120,null=True,blank=True)
     class Meta:
-        db_table="mnav_data"
+        db_table="mnav_header"
         verbose_name="中部导航栏数据"
         verbose_name_plural=verbose_name
     def __str__(self):
         return self.title
 
+
+class AdsList(BaseModel):
+    imges=models.ImageField(upload_to="ads",verbose_name="广告位上传图片",null=True,blank=True,help_text="广告位上传图片")
+    imges_url=models.CharField(max_length=100)
+    class Meta:
+        db_table="ads"
+        verbose_name="广告表"
+        verbose_name_plural=verbose_name
+    def __str__(self):
+        return self.imges_url
 
 
 
