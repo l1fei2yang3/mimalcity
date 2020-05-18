@@ -26,3 +26,29 @@ class MoblieList(BaseModel):
         verbose_name_plural=verbose_name
     def __str__(self):
         return self.name
+
+class MiddleNavHeader(BaseModel):
+    title=models.CharField(max_length=20,verbose_name="导航栏标题名称")
+    class Meta:
+        db_table="mnav"
+        verbose_name="中部导航栏标题"
+        verbose_name_plural=verbose_name
+    def __str__(self):
+        return self.title
+
+class MiddleNavHeaderData(BaseModel):
+    images=models.ImageField(upload_to="nav-img",verbose_name="中部导航栏图片",null=True,blank=True)
+    title=models.CharField(max_length=20,verbose_name="中部导航栏标题")
+    price=models.IntegerField(verbose_name="中部导航栏价格")
+    midhear=models.ForeignKey("MiddleNavHeader",on_delete=models.CASCADE,verbose_name="外键关联中部标题",related_name="mid_data")
+    images_url=models.CharField(max_length=120,null=True,blank=True)
+    class Meta:
+        db_table="mnav_data"
+        verbose_name="中部导航栏数据"
+        verbose_name_plural=verbose_name
+    def __str__(self):
+        return self.title
+
+
+
+
