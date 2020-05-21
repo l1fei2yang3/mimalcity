@@ -83,12 +83,6 @@ class LeftBottomAdsModelAPIView(ListAPIView):
 class RightBottomAdsModelAPIView(APIView):
     def get(self,request,*args,**kwargs):
         brm=RightBottomAdsList.objects.filter(is_show=True,is_delete=False)[:8]
-        # {"id": brm[count].id, "images_url": brm[count].images_url,
-        #  "title": brm[count].title, "desc": brm[count].discrable,
-        #  "is_new": brm[count].is_new, "color": brm[count].color,
-        #  # "price": brm[count].price}
-        # #
-
         res=serializer.RightBottomModelSerializer(brm,many=True)
 
 
@@ -100,5 +94,4 @@ class RightBottomAdsModelAPIView(APIView):
         data=[]
         for i in range(4,9,4):
             data.append(res.data[i-4:i])
-
         return Response(data)

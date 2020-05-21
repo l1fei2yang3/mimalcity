@@ -41,10 +41,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    # 解决跨域问题
+    'corsheaders',
     'user',
     'home',
-    #解决跨域问题
-    'corsheaders',
+
+    'product'
 
 ]
 
@@ -167,7 +169,6 @@ REST_FRAMEWORK = {
         'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
         #检查CSRF认证
         'rest_framework.authentication.SessionAuthentication',
-        #设置
         'rest_framework.authentication.BasicAuthentication',
     ),
 

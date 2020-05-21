@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="be2832a6-803b-45e0-a611-aba7d0eb3d33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/media/lads/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/mads/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/rads/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/imgs/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/media/imgs/product/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/serializer.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/product/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/constent.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/constent.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/serializer.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/serializer.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/home/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/home/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/home/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mimal/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mimal/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mimal/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mimal/urls.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +47,15 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\PycharmWorkspace\mimal\media\mads" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\PycharmWorkspace\mimal\async_task\tasklist" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\PycharmWorkspace\mimal\media\imgs" />
+      <recent name="D:\PycharmWorkspace\mimal\media\mads" />
+    </key>
   </component>
-  <component name="RunManager" selected="Python.views">
+  <component name="RunManager" selected="Django server.mimal">
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="mimal" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +149,9 @@
       <workItem from="1589791147877" duration="12485000" />
       <workItem from="1589805753786" duration="1678000" />
       <workItem from="1589810230537" duration="14236000" />
-      <workItem from="1589856332773" duration="20784000" />
+      <workItem from="1589856332773" duration="27037000" />
+      <workItem from="1589941305509" duration="20636000" />
+      <workItem from="1590056639305" duration="631000" />
     </task>
     <servers />
   </component>
@@ -164,30 +167,30 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="462" y="117" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1589805725633" />
-    <state width="1167" height="268" key="GridCell.Tab.0.bottom" timestamp="1589881598459">
+    <state width="1162" height="265" key="GridCell.Tab.0.bottom" timestamp="1590042684338">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1167" height="268" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1589881598459" />
-    <state width="1167" height="268" key="GridCell.Tab.0.center" timestamp="1589881598459">
+    <state width="1162" height="265" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1590042684338" />
+    <state width="1162" height="265" key="GridCell.Tab.0.center" timestamp="1590042684337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1167" height="268" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1589881598459" />
-    <state width="1167" height="268" key="GridCell.Tab.0.left" timestamp="1589881598459">
+    <state width="1162" height="265" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1590042684337" />
+    <state width="1162" height="265" key="GridCell.Tab.0.left" timestamp="1590042684337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1167" height="268" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1589881598459" />
-    <state width="1167" height="268" key="GridCell.Tab.0.right" timestamp="1589881598459">
+    <state width="1162" height="265" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1590042684337" />
+    <state width="1162" height="265" key="GridCell.Tab.0.right" timestamp="1590042684337">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1167" height="268" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1589881598459" />
+    <state width="1162" height="265" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1590042684337" />
     <state x="183" y="4" key="SettingsEditor" timestamp="1589415018251">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="183" y="4" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1589415018251" />
-    <state x="362" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1589856366453">
+    <state x="362" y="186" key="com.intellij.ide.util.TipDialog" timestamp="1590056655600">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="362" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1589856366453" />
+    <state x="362" y="186" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1590056655600" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1589873843922">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
